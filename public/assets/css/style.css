@@ -1,0 +1,124 @@
+body {
+    background: url(../images/clouds.jpg)  ;
+    font-family: 'Metamorphous', cursive;
+    
+}
+.main_heading{
+    text-align: center;
+    font-family: 'Cinzel Decorative', cursive;
+    text-shadow: 2px 2px 8px rgb(211, 191, 13);
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.secondary_heading{
+    text-align: left;
+    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.tertiary_heading{
+    text-align: right;
+    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.wish_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+    text-shadow: 2px 2px 8px rgb(7, 48, 161);
+    background: -webkit-linear-gradient(#eee, rgb(163, 163, 163));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fourth_heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    font-size: 2em;
+    background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+h2{
+    margin: 1em;
+
+}
+.button_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.button {
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    padding: 0.5em 1em;
+    border: solid 1px transparent;
+    border-radius: 2em 0em 2em 0em;
+    font-size: 1.5em;
+    font-family: 'Cinzel Decorative', cursive;
+    color: white;
+    opacity: .8;
+    background-color: rgb(89, 13, 211);
+    cursor: pointer;
+  }
+  .button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+  .button:hover {
+    color: rgb(89, 13, 211);
+    border-color: currentColor;
+    background-color: transparent;
+  }
+  
+ 
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+
+
+  /* font-family: 'Metamorphous', cursive;
+font-family: 'Akronim', cursive;
+font-family: 'Cinzel Decorative', cursive; */

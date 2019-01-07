@@ -1,22 +1,28 @@
 var orm = require("../config/orm.js");
 
 var wish = {
-    selectAll: function (callback) {
-        orm.selectAll("wishes", function (res) {
-            callback(res)
+    all: function (cb) {
+        orm.all("wishes", function (res) {
+            cb(res);
         })
     },
 
-    insertOne: function (wish, callback) {
-        orm.insertOne("wishes", wish, function (res) {
-            callback(res)
+    create: function (cols, vals, cb) {
+        orm.create("wishes", cols, vals, function (res) {
+            cb(res)
         })
     },
 
-    updateOne: function (id, callback) {
-        orm.updateOne("wishes", [id], function (res) {
-            callback(res)
+    update: function (objColVals, cb) {
+        orm.update("wishes", objColVals, function (res) {
+            cb(res)
         })
-    }
+    },
+
+    delete: function(condition, cb) {
+        orm.delete("wishes", condition, function(res) {
+          cb(res);
+        });
+      }
 }
 module.exports = wish;

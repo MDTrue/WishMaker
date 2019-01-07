@@ -1,1 +1,45 @@
+<div class = "main_heading">
 <h1>Make a wish</h1>
+</div>
+<div class = "secondary_heading">
+<h2>Wishes to be made</h2>
+</div>
+<ul>
+  {{#each wishes}}
+    {{#unless made}}
+      {{> wishes/wish-block made=true}}
+    {{/unless}}
+  {{/each}}
+</ul>
+<div class = "tertiary_heading">
+<h2>Wishes made</h2>
+</div>
+<ul>
+  {{#each wishes}}
+    {{#if made}}
+      {{> wishes/wish-block made=false}}
+    {{/if}}
+  {{/each}}
+</ul>
+<div class = "fourth_heading">
+<h2>add a wish</h2>
+</div>
+<div class = "wish_container">
+<form class="create-form">
+
+  <div class="form-group">
+    <label for="wish">wish:</label>
+    <input type="text" id="wish" name="name">
+  </div>
+
+  <div class="form-group">
+    <label for="make">already made?</label><br>
+    <input type="radio" name="made" value="1" checked> Made!<br>
+    <input type="radio" name="made" value="0"> to be made
+  </div>
+
+</form>
+</div>
+<div class="button_container">
+  <button class = "button" type="submit">Add wish</button>
+  </div>
