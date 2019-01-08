@@ -19,8 +19,11 @@ router.post("/api/wishes", function(req, res) {
     wish.create([
       "wish_name", "made"
     ], [
-      req.body.name, req.body.sleepy
-    ], function(result) {
+      req.body.wish_name, req.body.made
+    ], function(result, err) {
+      if (err) {
+        console.log(err)
+      }
       // Send back the ID of the new quote
       res.json({ id: result.insertId });
     });

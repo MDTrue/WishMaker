@@ -13,8 +13,8 @@ var wish = {
         })
     },
 
-    update: function (objColVals, cb) {
-        orm.update("wishes", objColVals, function (res) {
+    update: function (objColVals,condition, cb) {
+        orm.update("wishes", objColVals, condition, function (res) {
             cb(res)
         })
     },
