@@ -6,8 +6,8 @@ body {
 .main_heading{
     text-align: center;
     font-family: 'Cinzel Decorative', cursive;
-    text-shadow: 2px 2px 8px rgb(211, 191, 13);
-    font-size: 2em;
+    text-shadow: 2px 2px 8px rgb(199, 158, 22);
+    font-size: 2.5em;
     background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   background-clip: text;
@@ -15,8 +15,9 @@ body {
 
 }
 .secondary_heading{
-    text-align: left;
-    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 8px palevioletred;
     font-size: 2em;
     background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
@@ -25,8 +26,9 @@ body {
 
 }
 .tertiary_heading{
-    text-align: right;
-    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    text-shadow: 2px 2px 8px palevioletred;
     font-size: 2em;
     background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
@@ -34,7 +36,7 @@ body {
   -webkit-text-fill-color: transparent;
 
 }
-.wish_container{
+.list_container{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,13 +47,29 @@ body {
     background: -webkit-linear-gradient(#eee, rgb(163, 163, 163));
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: rgb(209, 252, 241);
+
+}
+.wish_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0.1em 1em;
+    text-shadow: 2px 2px 8px rgb(7, 48, 161);
+    background: -webkit-linear-gradient(#eee, rgb(163, 163, 163));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: rgb(209, 252, 241);
 }
 .fourth_heading{
+    font-family: 'Cinzel Decorative', cursive;
     display: flex;
     text-align: center;
     justify-content: center;
-    text-shadow: 2px 2px 8px rgb(89, 13, 211);
+    text-shadow: 2px 2px 8px palevioletred;
     font-size: 2em;
     background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
@@ -60,7 +78,7 @@ body {
 
 }
 h2{
-    margin: 1em;
+    margin: .5em;
 
 }
 .button_container{
@@ -80,10 +98,10 @@ h2{
     border: solid 1px transparent;
     border-radius: 2em 0em 2em 0em;
     font-size: 1.5em;
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Montez', cursive;
     color: white;
     opacity: .8;
-    background-color: rgb(89, 13, 211);
+    background-color: rgb(199, 158, 22);
     cursor: pointer;
   }
   .button:active {
@@ -93,32 +111,95 @@ h2{
   .button:hover {
     color: rgb(89, 13, 211);
     border-color: currentColor;
-    background-color: transparent;
+    background-color: plum;
+  }
+  .change-made {
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    padding: 0.1em .5em;
+    border: solid 1px transparent;
+    border-radius: 2em 0em 2em 0em;
+    font-size: 1.5em;
+    font-family: 'Montez', cursive;
+    color: white;
+    opacity: .8;
+    background-color: rgb(89, 13, 211);
+    cursor: pointer;
+
+  }
+  .change-made:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+  .change-made:hover {
+    color: rgb(89, 13, 211);
+    border-color: currentColor;
+    background-color:lightgreen;
+  }
+  .delete-wish {
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 0;
+    padding: 0.1em .5em;
+    border: solid 1px transparent;
+    border-radius: 0em 2em 0em 2em;
+    font-size: 1.5em;
+    font-family: 'Montez', cursive;
+    color: white;
+    opacity: .8;
+    background-color: rgb(89, 13, 211);
+    cursor: pointer;
+
+  }
+  .delete-wish:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+  }
+  .delete-wish:hover {
+    color: rgb(89, 13, 211);
+    border-color: currentColor;
+    background-color:rgb(199, 158, 22);
   }
   
  
 li {
+    list-style-type: none;
     padding: 5px;
     margin: 5px;
-    background: #faebd7;
+    /* background: blue; */
   }
   
   .label {
-    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 1em
   }
   
-  .create-update-form {
-    padding: 5px;
+  /* .create-update-form {
+     padding: 5px;
     margin: 5px;
     background: aqua;
-  }
+  } */
   
   .form-group {
-    margin-bottom: 5px;
+    padding: 1em
+  }
+  input {
+      outline: none;
+      background-color: transparent;
+      font-family: 'Metamorphous', cursive;
+      font-size: 1em;
+      padding: .5em;
+      border: none;
+      border-bottom: 2px solid white;
   }
 
 
 
   /* font-family: 'Metamorphous', cursive;
-font-family: 'Akronim', cursive;
+font-family: 'Montez', cursive;
 font-family: 'Cinzel Decorative', cursive; */

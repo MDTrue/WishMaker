@@ -1,9 +1,10 @@
 <div class = "main_heading">
-<h1>Make a wish</h1>
+<h1>MaKe A WiSh</h1>
 </div>
 <div class = "secondary_heading">
-<h2>Wishes to be made</h2>
+<h2>WiShes To Be MaDe</h2>
 </div>
+<div class="list_container">
 <ul>
   {{#each wishes}}
     {{#unless made}}
@@ -11,9 +12,11 @@
     {{/unless}}
   {{/each}}
 </ul>
-<div class = "tertiary_heading">
-<h2>Wishes made</h2>
 </div>
+<div class = "tertiary_heading">
+<h2>WiShes MaDe</h2>
+</div>
+<div class="list_container">
 <ul>
   {{#each wishes}}
     {{#if made}}
@@ -21,8 +24,9 @@
     {{/if}}
   {{/each}}
 </ul>
+</div>
 <div class = "fourth_heading">
-<h2>add a wish</h2>
+<h2>Add A WisH</h2>
 </div>
 <div class = "wish_container">
 <form class="create-form">
@@ -34,8 +38,8 @@
 
   <div class="form-group">
     <label for="make">already made?</label><br>
-    <input type="radio" name="made" value="1" checked> Made!<br>
-    <input type="radio" name="made" value="0"> to be made
+    <input type="radio" name="made" value="0" checked> made!<br>
+    <input type="radio" name="made" value="1"> to be made
   </div>
 
 <div class="button_container">
